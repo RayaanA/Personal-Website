@@ -1,0 +1,119 @@
+#work {
+  margin-left: 125px;
+  min-height: 80vh;
+  padding: 50px;
+}
+
+.projects-grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-gap: 100px 20px;
+  list-style-type: none;
+}
+
+/*
+  @media (max-width: 1080px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }*/
+
+.projects-card {
+  /* align-items: flex-start; */
+  height: auto;
+  padding: 2rem 1.75rem;
+  background-color: rgba(144, 248, 153, 0.589);
+  border: 3px solid transparent;
+  border-radius: 12px;
+  width: auto;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.projects-card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(4, 80, 33, 0);
+  border-color: white;
+  border-width: 3px;
+}
+
+/*
+  .card-header {
+    margin-top: -20px;
+    display: flex;
+    padding: 1.25em 0 !important;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none !important;
+  }
+  .folder-icon {
+    color: var(--green-bright);
+  }
+  
+  .github-icon {
+    margin-top: 6px;
+  }
+  .github-icon:hover {
+    color: var(--green-bright);
+  }
+  
+  .open-icon {
+    margin-left: 10px;
+  }*/
+
+.card-title {
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-desc {
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-tech {
+  /*font-family: 'Montserrat', sans-serif;*/
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media(max-width: 760px){
+  #work{
+    margin-left: 50px;
+    
+  }
+  .work{
+    padding-left: 0px;
+  }
+  .projects-card {
+    /* align-items: flex-start; */
+    height: auto;
+    padding: 1rem 0.75rem;
+    background-color: rgba(144, 248, 153, 0.589);
+    border: 3px solid transparent;
+    border-radius: 12px;
+    width: auto;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .card-title {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .card-desc {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .card-tech {
+    /*font-family: 'Montserrat', sans-serif;*/
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

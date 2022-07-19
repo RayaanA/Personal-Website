@@ -1,0 +1,137 @@
+#contact{
+    margin-left: 125px;
+    min-height: 80vh;
+    padding: 50px;
+}
+
+.cfirstHalf{
+    width: 30%;
+    padding: 30px;
+    min-height: 80vh;
+    float: left;
+}
+.cfirstHalf .intro2{
+    margin-top: 50px;
+    width: 100%;
+    min-width: 300px;
+    padding: 0px 15px;
+    line-height: 30px;
+    /*font-family: 'Ibarra Real Nova', serif;*/
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+}
+.cfirstHalf form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 70px;
+    min-width: 350px;
+
+}
+
+.firstLine{
+    width: 100%;
+    display: block;
+}
+.firstLine .name{
+    margin-bottom: 10px;
+    width: 48%;
+    float: left;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    height: 50px;
+    border: none;
+    background-color: rgb(150, 150, 150);
+    font-family: 'Roboto Mono', monospace;
+}
+.firstLine .name:focus{
+    outline: none;
+}
+
+.firstLine .email{
+    margin-bottom: 10px;
+    width: 48%;
+    float: right;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    height: 50px;
+    border: none;
+    background-color: rgb(150, 150, 150);
+    font-family: 'Roboto Mono', monospace;
+}
+.firstLine .email:focus{
+    outline: none;
+}
+
+.subject{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    background-color:rgb(150, 150, 150);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subject:focus{
+    outline: none;
+}
+
+.message{
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    border: none;
+    margin-bottom: 10px;
+    height: 150px;
+    padding: 15px;
+    background-color: rgb(150, 150, 150);
+    font-family: 'Roboto Mono', monospace;
+}
+.message:focus{
+    outline: none;
+}
+
+.subcontainer{
+    width : 100%;
+}
+.submit{
+    border: 1px solid green;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    float: right;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+}
+
+.submit:active{
+    transform: translateY(5px);
+}
+
+.csecondHalf{
+    margin-top: 50px;
+    padding: 20px;
+    width: 55%;
+    min-height: 70vh;
+    float: right;
+}
+
+@media(max-width: 760px){
+    #contact{
+        margin-left:50px;
+    }
+    .cfirstHalf{
+        padding-left:0;
+    }
+    .cfirstHalf .intro2{
+        width: 350px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,92 @@
+
+#intro{
+    margin-left: 125px;
+    min-height: 80vh;
+    background-color: rgb(37, 37, 37);  
+    padding: 0 50px;
+}
+
+.firstHalf{
+    color: greenyellow;
+    width: 100%;
+    min-height: 400px;
+    font-size: 4.5rem;
+    font-family: helloWrld;
+}
+.text1{
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    white-space: pre-wrap;
+    line-height: 130px;
+    padding: 0;
+    margin: 0;
+}
+/*
+.text2{
+    padding: 15px;
+    display: flex;
+    width: 30%;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: center;
+}
+.text3{
+    padding: 15px;
+    display: flex;
+    width: 50%;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+}*/
+.second-half{
+    min-height: 30%;
+}
+.textAfter{
+    font-size: 1.6rem;
+    min-width: 400px;
+    width: 45%;
+    margin-left: 55%;
+    line-height: 3.5rem;
+    color: lightslategrey;
+    animation: fadeIn 10s;
+    font-family: 'Roboto Mono', monospace;
+    /*font-family: 'Edu SA Beginner', cursive;*/
+    letter-spacing: 2px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@font-face {
+    font-family: "helloWrld";
+    src: local("helloWrld"), url("../fonts/hello-world.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@media(max-width: 760px){
+    #intro{
+        margin-left: 50px;
+    }
+    .firstHalf{
+        font-size: 2rem;
+    }
+    .text1{
+        padding: 15px;
+        width: 100%;
+        margin: 0;
+        line-height: 100px;
+        white-space: pre-wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .textAfter{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+/*'Courier New', Courier, monospace*/

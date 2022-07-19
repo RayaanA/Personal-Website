@@ -1,0 +1,45 @@
+
+#about{
+    margin-left: 125px;
+    min-height: 80vh;
+    padding: 50px;
+}
+
+.about{
+    font-size: 1.4rem;
+    padding-left: 170px;
+    line-height: 3.5rem;
+    font-family: 'Roboto Mono', monospace;
+}
+/*
+.firstLine{
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: Garamond, serif;;
+}
+*/
+.about ul{
+    columns: 2;
+    column-width: auto;
+    width: fit-content;
+    list-style: none;
+}
+
+.about li::before{
+    content: "➢ ";
+    color: rgb(103, 103, 202);
+}
+
+@media(max-width:760px){
+    #about{
+        margin-left:50px;
+    }
+    .about{
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+}
